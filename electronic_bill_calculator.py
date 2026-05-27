@@ -1,0 +1,46 @@
+"""
+=================================================
+ELECTRICITY BILL CALCULATOR
+=================================================
+
+Problem Statement:
+Write a Python program to calculate electricity bill.
+
+-------------------------------------------------
+Conditions:
+1. First 100 units  -> ₹5 per unit
+2. Next 100 units   -> ₹7 per unit
+3. Above 200 units  -> ₹10 per unit
+
+-------------------------------------------------
+Input Example:
+250
+
+Output Example:
+Total Bill = ₹1700
+
+-------------------------------------------------
+Hints:
+Use if, elif, and else conditions.
+
+=================================================
+"""
+
+# Take input from user
+units = int(input("Enter electricity units consumed: "))
+
+# Initialize bill
+bill = 0
+
+# Calculate bill
+if units <= 100:
+    bill = units * 5
+
+elif units <= 200:
+    bill = (100 * 5) + ((units - 100) * 7)
+
+else:
+    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
+
+# Display total bill
+print("Total Bill = ₹", bill)
