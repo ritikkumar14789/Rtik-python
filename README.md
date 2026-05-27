@@ -1,2 +1,3 @@
 # Rtik-python
-my first git hub.
+My First Git Hub.
+Author Ritik Kumar (CSE)
